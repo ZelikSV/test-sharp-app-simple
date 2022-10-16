@@ -1,0 +1,17 @@
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+   display: inline-block;
+    background: wheat;
+    color: darkslateblue;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+a:hover {
+    background: gray;
+}

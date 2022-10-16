@@ -1,0 +1,16 @@
+.tabs {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    color: darkslateblue;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.selectedTab {
+    background: blue;
+    color: white;
+}

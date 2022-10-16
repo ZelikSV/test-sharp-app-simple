@@ -1,0 +1,11 @@
+.breadCrumbsContainer {
+    display: flex;
+}
+
+.breadCrumbsItem {
+    color: darkslateblue;
+    background: grey;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}

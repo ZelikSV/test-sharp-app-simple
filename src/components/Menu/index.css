@@ -1,0 +1,13 @@
+.menu {
+    width: 50%;
+}
+
+.menu > li {
+    list-style: none;
+}
+
+li > a {
+    display: inline-block;
+    color: green;
+    padding: 3px 10px;
+}
