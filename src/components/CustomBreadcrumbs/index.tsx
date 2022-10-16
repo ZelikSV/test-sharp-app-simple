@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, withRouter} from "react-router";
 import {IWithRouter} from "../../types";
-import './styles.css';
+import styles from './styles.module.scss';
 import useBreadcrumbs, {BreadcrumbComponentProps} from "./useBreadcrumbs";
 
 type Props = {};
@@ -9,8 +9,7 @@ type Props = {};
 const DynamicUserBreadcrumb = ({ match }: BreadcrumbComponentProps) => <span>{match.params.slug?.toLocaleUpperCase()}</span>;
 
 
-const CustomPropsBreadcrumb = ({match, location}: any) => {
-    console.log(match);
+const CustomPropsBreadcrumb = ({match}: any) => {
     return (
         <span>
             {`Event by ${match.params?.eventId}`}
@@ -49,8 +48,8 @@ const CustomBreadcrumbs:React.FC<Props & IWithRouter> = ({location, router}) => 
     const goHome = () => router.push('/');
 
     return (
-        <div className='mainBreadcrumbContainer'>
-            <div className='homeBlock'>
+        <div className={styles.mainBreadcrumbContainer}>
+            <div className={styles.homeBlock}>
                 {!['/', '/sports'].includes(location.pathname) && <p onClick={goBack}>&#8678;</p>}
                 <p onClick={goHome}>&#127968;</p>
             </div>
